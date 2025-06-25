@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 Sorting Algorithm Visualizer</h1>
+    <h2 id="currentSort">Currently Running: None</h2>
+
+    <div class="panel glass">
+      <div class="range-group">
+        <label for="sizeRange">Array Size:</label>
+        <input type="range" id="sizeRange" min="10" max="100" value="50" oninput="generateArray(this.value)">
+      </div>
+
+      <div class="range-group">
+        <label for="speedRange">Speed:</label>
+        <input type="range" id="speedRange" min="1" max="100" value="50" oninput="updateSpeed(this.value)">
+        <span id="speedValue">1x</span>
+      </div>
+
+      <div class="button-group">
+        <button onclick="generateArray()">Generate</button>
+        <button onclick="startSort('bubble')">Bubble</button>
+        <button onclick="startSort('selection')">Selection</button>
+        <button onclick="startSort('insertion')">Insertion</button>
+        <button onclick="startSort('merge')">Merge</button>
+        <button onclick="startSort('quick')">Quick</button>
+      </div>
+
+      <div class="stats">
+        <span id="swapCount">Swaps: 0</span>
+        <span id="compareCount">Comparisons: 0</span>
+
+        <label class="switch">
+          <input type="checkbox" onclick="toggleTheme()">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="bars-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
