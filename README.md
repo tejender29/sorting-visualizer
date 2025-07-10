@@ -50,3 +50,18 @@ To run the project locally on your system:
 git clone https://github.com/your-username/sorting-visualizer.git
 cd sorting-visualizer
 open index.html
+📜 Learning Outcome
+
+This project helped me:
+	•	Strengthen my understanding of sorting algorithms
+	•	Practice JavaScript DOM manipulation
+	•	Build logic-based animation flow
+	•	Bridge the gap between DSA and frontend development
+
+⸻
+
+🙋‍♂️ Author
+
+Tejender Singh
+🎓 B.Tech CSE (AI & DS), Poornima College of Engineering, Jaipur
+💪 DSA + Frontend Developer in progress
